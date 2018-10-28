@@ -23,6 +23,7 @@ class CreateTblProject extends Migration
             $table->date('end_date');
             $table->string('description');
             $table->string('comment');
+            $table->timestamps();
 
 
         });

@@ -29,6 +29,7 @@ class CreateTblClientInformation extends Migration
             $table->string('offer_numbers');
             $table->string('offer_status');
             $table->integer('debt_limit');
+            $table->timestamps();
 
 
         });

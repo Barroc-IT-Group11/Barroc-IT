@@ -102,6 +102,8 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/sales/appointments', 'SalesController@appointments')->middleware('CheckSales');
     Route::get('/sales/create_client', 'SalesController@create_client')->middleware('CheckSales');
 
+    Route::post('/sales/store', 'PersonalDetailController@store')->name('store');
+
 /*  Development pages  */
 
     Route::get('/development', 'DevelopmentController@index')->middleware('CheckDevelopment');

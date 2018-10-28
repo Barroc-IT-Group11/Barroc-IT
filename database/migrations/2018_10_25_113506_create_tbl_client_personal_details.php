@@ -26,6 +26,7 @@ class CreateTblClientPersonalDetails extends Migration
             $table->string('phone_number_2')->nullable();
             $table->string('fax_number')->nullable();
             $table->string('e_mail');
+            $table->timestamps();
         });
     }
 

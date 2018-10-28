@@ -31,6 +31,7 @@
 <!-- mid center section admin page */ -->
 <div class="container">
     <div class="selectdepartement">
+        <div class="department_choice">
         <ul>
             <li>
                 <div class="flip-box">
@@ -62,7 +63,7 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2><i class="fas fa-plus"></i></h2>
+                            <h2><i class="fas fa-project-diagram"></i></h2>
                         </div>
                         <div class="flip-box-back">
                             <a href="{{ url('/sales/create_project') }}"><h2>CREATE PROJECT</h2></a>
@@ -74,7 +75,7 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2><i class="fas fa-plus"></i></h2>
+                            <h2><i class="fas fa-calendar-alt"></i></h2>
                         </div>
                         <div class="flip-box-back">
                             <a href="{{ url('/sales/appointments') }}"><h2>APPOINTMENTS</h2></a>
@@ -95,6 +96,7 @@
                 </div>
             </li>
         </ul>
+    </div>
     </div>
 
 

@@ -21,7 +21,7 @@ class CreateTblProjects extends Migration
             $table->unsignedInteger('contact_person_id');
             $table->unsignedInteger('invoice_id');
             $table->unsignedInteger('appointment_id');
-
+            $table->timestamps();
 
         });
     }

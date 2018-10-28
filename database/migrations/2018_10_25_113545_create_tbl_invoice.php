@@ -21,6 +21,7 @@ class CreateTblInvoice extends Migration
             $table->integer('invoice_btw');
             $table->integer('invoice_total_price');
             $table->integer('invoice_excluding_btw');
+            $table->timestamps();
         });
     }
 

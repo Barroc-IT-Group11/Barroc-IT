@@ -19,6 +19,7 @@ class CreateTblContactPerson extends Migration
             $table->string('contact_name');
             $table->string('initials');
             $table->date('last_contact_date');
+            $table->timestamps();
         });
     }
 

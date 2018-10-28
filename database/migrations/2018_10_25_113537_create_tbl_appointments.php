@@ -21,6 +21,7 @@ class CreateTblAppointments extends Migration
             $table->string('location');
             $table->time('time');
             $table->string('descriptions');
+            $table->timestamps();
         });
     }
 

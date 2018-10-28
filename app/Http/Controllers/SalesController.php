@@ -36,4 +36,7 @@ class SalesController extends Controller
     {
         return view('sales/sales_create_client');
     }
+
+
+
 }

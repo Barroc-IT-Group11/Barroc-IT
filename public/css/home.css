@@ -354,9 +354,16 @@ nav ul li a {
 .flip-box-front i{
     height: 500%;
     font-size: 50px;
-
 }
-
+.department_choice{
+    width: 110%;
+}
+.department_choice ul{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
 /* =============================================================
     END ADMINISTRATOR PAGE
     ============================================================

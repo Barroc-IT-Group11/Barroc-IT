@@ -18,6 +18,7 @@ class CreateTblSystemInfo extends Migration
             $table->unsignedInteger('system_info_id');
             $table->string('hardware');
             $table->string('operating_system');
+            $table->timestamps();
         });
     }
 

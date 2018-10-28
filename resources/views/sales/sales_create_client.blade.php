@@ -28,28 +28,28 @@
         @include('../require_files/sales_navbar')
         <div class="container">
             <div class="create_client_grid">
-                <form action="">
-
+                <form method="post" action="{{ route('store') }}">
+                    @csrf
                     <div class="create-client-row1">
                         <div class="box">
-                            <input type="text" name="" placeholder="name">
+                            <input type="text" name="" placeholder="Name">
                         </div>
 
                         <div class="couple">
                             <input type="text" name="address_1" placeholder="Address 1">
-                            <input type="text" name="address_2" placeholder="Address 2">
+                            <input type="text" name="address_2" placeholder="Address 2*">
                         </div>
 
                         <div class="couple">
                             <input type="text" name="zip_code_1" placeholder="Zip Code 1">
-                            <input type="text" name="zip_code_2" placeholder="Zip Code 2">
+                            <input type="text" name="zip_code_2" placeholder="Zip Code 2*">
                         </div>
 
                         <div class="box">
-                            <input type="text" name="fax_number" placeholder="Fax number">
-                            <input type="text" name="last_contact_date" placeholder="Last Contact Date">
-                            <input type="text" name="date_of_action" placeholder="Date of Action">
-                            <input type="text" name="next_action" placeholder="Next Action">
+                            <input type="text" name="fax_number" placeholder="Fax number*">
+                            <input type="date" name="last_contact_date" placeholder="Last Contact Date">
+                            <input type="date" name="date_of_action" placeholder="Date of Action">
+                            <input type="date" name="next_action" placeholder="Next Action">
                         </div>
                     </div>
 
@@ -59,12 +59,12 @@
                         </div>
                         <div class="couple">
                             <input type="text" name="residence_1" placeholder="Residence 1">
-                            <input type="text" name="residence_2" placeholder="Residence 2">
+                            <input type="text" name="residence_2" placeholder="Residence 2*">
                         </div>
 
                         <div class="couple">
                             <input type="text" name="telephone_number 1" placeholder="Telephone Number 1">
-                            <input type="text" name="telephone_number 2" placeholder="Telephone Number 2">
+                            <input type="text" name="telephone_number 2" placeholder="Telephone Number 2*">
                         </div>
                         <div class="box">
                             <input type="text" name="e-mail" placeholder="e-mail">
@@ -94,7 +94,8 @@
                                 <option value="client">Client</option>
                             </select>
 
-                            <input type="text" name="project_name" placeholder="Prospect Client">
+                            <input type="text" name="project_name" placeholder="Prospect name">
+                            <p>* Optional</p>
                             <input type="submit" value="save">
                         </div>
                     </div>
