@@ -18,7 +18,7 @@ class CreateProjectsContactPersonForeign extends Migration
 
             $table->foreign('contact_person_id')
                 ->references('id')
-                ->on('contact_person')
+                ->on('contact_people')
                 ->onDelete('cascade');
         });
     }

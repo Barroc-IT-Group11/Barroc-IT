@@ -32,7 +32,7 @@
                     @csrf
                     <div class="create-client-row1">
                         <div class="box">
-                            <input type="text" name="" placeholder="Name">
+                            <input type="text" name="contact_name" placeholder="Name">
                         </div>
 
                         <div class="couple">
@@ -47,9 +47,9 @@
 
                         <div class="box">
                             <input type="text" name="fax_number" placeholder="Fax number*">
-                            <input type="date" name="last_contact_date" placeholder="Last Contact Date">
-                            <input type="date" name="date_of_action" placeholder="Date of Action">
-                            <input type="date" name="next_action" placeholder="Next Action">
+                            <input type="text" name="last_contact_date" placeholder="Last Contact Date">
+                            <input type="text" name="date_of_action" placeholder="Date of Action">
+                            <input type="text" name="next_action" placeholder="Next Action">
                         </div>
                     </div>
 

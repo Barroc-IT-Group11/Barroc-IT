@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Personal_detail;
+use App\Contact_people;
+
 
 class PersonalDetailController extends Controller
 {
@@ -93,6 +95,17 @@ class PersonalDetailController extends Controller
 
 // add other fields
         $client->save();
+
+
+        $person= new Contact_people();
+        $person->contact_person_id= 1;
+        $person->contact_name= $request['contact_name'];
+        $person->initials= $request['initials'];
+        $person->last_contact_date= $request['last_contact_date'];
+
+
+// add other fields
+        $person->save();
 
         return redirect('/sales/store');
     }
