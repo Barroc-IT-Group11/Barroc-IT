@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Finance;
 use Illuminate\Http\Request;
+use App\Data;
+use App\Data2;
+
 
 
 class FinanceController extends Controller
@@ -25,8 +28,12 @@ class FinanceController extends Controller
 
     public function client()
     {
+
         $data = Data::all ();
-        return view('finance/finance_information')->withData ( $data );
+        $data2 = Data2::all ();
+        return view('finance/finance_information')
+            ->with( 'data', $data )
+            ->with('data2', $data2);
     }
 }
 

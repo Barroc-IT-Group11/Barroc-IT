@@ -49,22 +49,25 @@
         </tr>
         </thead>
         <tbody>
+
         @foreach($data as $item)
+            @foreach($data2 as $items)
             <tr class="item{{$item->id}}">
                 <td>{{$item->client_id}}</td>
-                <td>{{$item->contact_name}}</td>
+                <td>{{$item->Prospect}}</td>
                 <td>{{$item->company_name}}</td>
-                <td>{{$item->phone_number_1}}</td>
+                <td>{{$items->phone_number_1}}</td>
                 <td>{{$item->creditworthy}}</td>
                 <td><button class="edit-modal btn btn-info"
-                            data-info="{{$item->id}},{{$item->client_id}},{{$item->contact_name}},{{$item->company_name}},{{$item->phone_number_1}},{{$item->creditworthy}}">
+                            data-info="{{$item->id}},{{$item->client_id}},{{$item->Prospect}},{{$item->company_name}},{{$item->phone_number_1}},{{$item->creditworthy}}">
                         <span class="glyphicon glyphicon-edit"></span> Edit
                     </button>
                     <button class="delete-modal btn btn-danger"
-                            data-info="{{$item->id}},{{$item->client_id}},{{$item->contact_name}},{{$item->company_name}},{{$item->phone_number_1}},{{$item->creditworthy}}">
+                            data-info="{{$item->id}},{{$item->client_id}},{{$item->Prospect}},{{$item->company_name}},{{$item->phone_number_1}},{{$item->creditworthy}}">
                         <span class="glyphicon glyphicon-trash"></span> Delete
                     </button></td>
             </tr>
+                @endforeach
         @endforeach
         </tbody>
     </table>
