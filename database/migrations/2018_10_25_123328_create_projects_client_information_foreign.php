@@ -18,7 +18,7 @@ class CreateProjectsClientInformationForeign extends Migration
 
             $table->foreign('client_id')
                 ->references('id')
-                ->on('client_information')
+                ->on('client_informations')
                 ->onDelete('cascade');
         });
     }

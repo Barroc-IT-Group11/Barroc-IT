@@ -14,7 +14,7 @@ class CreateProjectsClientPersonalDetailsForeign extends Migration
     public function up()
     {
         // vastleggen van de relatie tussen games en publishers
-        Schema::table('client_information', function (Blueprint $table) {
+        Schema::table('client_informations', function (Blueprint $table) {
 
             $table->foreign('client_info_id')
                 ->references('id')

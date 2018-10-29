@@ -18,7 +18,7 @@ class CreateAppointmentsContactPersonForeign extends Migration
 
             $table->foreign('contact_person_id')
                 ->references('id')
-                ->on('contact_people')
+                ->on('contact_peoples ')
                 ->onDelete('cascade');
         });
     }

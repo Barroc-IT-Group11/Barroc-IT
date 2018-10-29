@@ -13,7 +13,7 @@ class CreateTblContactPerson extends Migration
      */
     public function up()
     {
-        Schema::create('contact_people', function (Blueprint $table) {
+        Schema::create('contact_peoples', function (Blueprint $table) {
             $table->increments('id');
             $table->string('contact_person_id');
             $table->string('contact_name');

@@ -14,7 +14,7 @@ class CreateTblClientInformation extends Migration
     public function up()
     {
 
-        Schema::create('client_information', function (Blueprint $table) {
+        Schema::create('client_informations', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('client_id');
             $table->unsignedInteger('client_info_id');

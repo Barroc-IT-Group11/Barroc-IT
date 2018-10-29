@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Client_information;
 use Illuminate\Http\Request;
 use App\Personal_detail;
 use App\Contact_people;
@@ -106,6 +107,18 @@ class PersonalDetailController extends Controller
 
 // add other fields
         $person->save();
+
+        $info= new Client_information();
+        $info->Prospect= $request['prospect/client'];
+        $info->creditworthy= $request['credit_worthy'];
+        $info->company_name= $request['company_name'];
+        $info->offer_status= $request['offer_status'];
+        $info->offer_numbers= $request['offer_numbers'];
+        $info->client_info_id= 1;
+        $info->client_id= 1;
+
+// add other fields
+        $info->save();
 
         return redirect('/sales/store');
     }
