@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Client_information;
+use App\Deleteitem;
 use Illuminate\Http\Request;
 use App\Personal_detail;
 use App\Contact_people;
-
 
 class PersonalDetailController extends Controller
 {
@@ -70,10 +70,13 @@ class PersonalDetailController extends Controller
 //     * @param  int  $id
 //     * @return \Illuminate\Http\Response
 //     */
-//    public function destroy($id)
-//    {
-//        //
-//    }
+    public function destroy($id)
+    {
+        $data = Deleteitem::find($id);
+        $data->delete();
+
+        return redirect('/finance/client');
+    }
 
     public function store(Request $request)
     {

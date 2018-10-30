@@ -21,14 +21,14 @@ class CreateTblClientInformation extends Migration
             $table->boolean('Prospect');
             $table->boolean('creditworthy');
             $table->string('company_name');
-            $table->string('ledger_account');
-            $table->string('maintenance_contract');
-            $table->string('btw_code');
-            $table->string('open_project');
-            $table->string('bank_account_number');
+            $table->string('ledger_account')->nullable();
+            $table->string('maintenance_contract')->nullable();
+            $table->string('btw_code')->nullable();
+            $table->string('open_project')->nullable();
+            $table->string('bank_account_number')->nullable();
             $table->string('offer_numbers');
             $table->string('offer_status');
-            $table->integer('debt_limit');
+            $table->integer('debt_limit')->nullable();
             $table->timestamps();
 
 

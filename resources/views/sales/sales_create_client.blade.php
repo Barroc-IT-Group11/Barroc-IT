@@ -84,14 +84,14 @@
                         <div class="box">
                             <select name="credit_worthy">
                                 <option value="" disabled selected>Credit Worthy Y/N</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
 
                             <select name="prospect/client">
                                 <option value="" disabled selected>Prospect/Client</option>
-                                <option value="prospect">Prospect</option>
-                                <option value="client">Client</option>
+                                <option value="0">Prospect</option>
+                                <option value="1">Client</option>
                             </select>
 
                             <input type="text" name="project_name" placeholder="Prospect name">

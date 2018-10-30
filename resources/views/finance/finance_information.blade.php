@@ -1,40 +1,35 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Client Information</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create client</title>
+    <link rel="stylesheet" type="text/css" href="{{asset('../css/home.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('../css/sales/sales_create_client.css')}}"/>
     <link rel="stylesheet" href="../../../public/css/create_invoice.css">
     <link rel="stylesheet" href="{{asset('css/create_invoice.css')}}">
-    <script src="//code.jquery.com/jquery-1.12.3.js"></script>
-    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script
-            src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-    <link rel="stylesheet"
-          href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 
-<nav>
-    <h1><b>BARROC IT</b><br>Software for real</h1>
 
-    <h2>Finance</h2>
-    <div class="tooltip"><h2>?</h2>
-        <span class="tooltiptext">Tooltip text</span>
-    </div>
-    </div>
-    <div class="navbuttons">
-        <button class="navbutton"><span>Client Information</span></button>
-        <button class="navbutton"><span>Create Invoice</span></button>
-        <button class="navbutton"><span>Overview Invoices</span></button>
-    </div>
-</nav>
+@include('../require_files/sales_navbar')
 
 <div class="main">
     <table class="table" id="table">
